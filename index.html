@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <title>Топ 100 игр для игр для Android</title>
+</head>
+
+<body>
+  <div class="game-100">
+    <header class="navbar">
+      <div class="menu">
+        <h3 class="logo">Ali<span>Games</span></h3>
+        <input type="checkbox" id="burger-checkbox" class="burger-checkbox">
+        <label for="burger-checkbox" class="burger">
+          <div></div>
+        </label>
+        <ul class="menu-list">
+          <li><a href="#home" class="menu-item"><i class="fa-solid fa-house iconka"></i> Главная</a></li>
+          <li><a href="#games" class="menu-item"><i class="fa-solid fa-trophy iconka"></i> Игры</a></li>
+          <li><a href="#about" class="menu-item"><i class="fa-solid fa-clock iconka"></i> О Нас!</a></li>
+          <li><a href="#contact" class="menu-item"><i class="fa-solid fa-film iconka"></i> Контакт</a></li>
+        </ul>
+      </div>
+    </header>
+    
+    <main class="main-content">
+      <div id="home" class="container">
+        <div class="image-container">
+          <img src="game.jpg" alt="anime" class="bg-img">
+          <div class="text-overlay">
+            <h4 class="title">Лучшие игры</h4>
+            <p class="additional-information">Бесплатно больше <span>+100</span> и это число обновляется <span>КАЖДЫЙ ДЕНЬ!</span></p>
+            <div class="main-buttons">
+              <button class="main-btn">Игры</button>
+              <button class="main-btn">Поисковик</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  
+  <div id="games" class="container">
+    <div class="spacer"></div>
+    <div class="games">
+      <h2 class="game-text">Все игры подряд!</h2>
+    </div>
+    <div id="gamesContainer"></div>
+  </div>
+    
+  <div id="about" class="o-nas">
+    <div class="spacer"></div>
+    <section class="card-contanier">
+      <div class="card-contant">
+        <div class="card">
+          <i class="fa-solid fa-clock"></i>
+          <h4 class="title">Скорость</h4>
+          <p class="contant">У нас вы найдёте очень много игр и сможете найти для вас подходящий за несколько минут </p>
+        </div>
+        <div class="card">
+          <i class="fa-solid fa-play"></i>
+          <h4 class="title">Игры</h4>
+          <p class="contant">На нашем сайте есть больше 100 игр и это число обновляется каждый день!</p>
+        </div>
+        <div class="card">
+          <i class="fa-solid fa-user"></i>
+          <h4 class="title">Комьюнити</h4>
+          <p class="contant">Больше 30.000 активных пользователей каждый день и все довольны</p>
+        </div>
+      </div>
+    </section>
+  </div>
+    
+  <div id="contact" class="contact">
+    <div class="contact-bar">
+      <section class="contact-us" id="contact-section">
+        <form id="contact-form" action="#" method="post">
+          <div class="section-heading">
+            <h4>Контакт бар</h4>
+          </div>
+          <div class="inputField">
+            <input type="text" name="name" id="name" placeholder="Ваше имя" autocomplete="on" required>
+            <span class="valid_info_name"></span>
+          </div>
+          <div class="inputField">
+            <input type="email" name="email" id="email" placeholder="Ваш Email" required>
+            <span class="valid_info_email"></span>
+          </div>
+          <div class="inputField">
+            <textarea name="message" id="message" placeholder="Сообщение..."></textarea>
+            <span class="valid_info_message"></span>
+          </div>
+          <div class="inputField btn">
+            <button type="button" id="submit-form" class="main-gradient-button">Отправить сообщение</button>
+          </div>
+        </form>
+      </section>
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+
+</html>
